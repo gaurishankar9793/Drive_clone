@@ -23,7 +23,8 @@ export const database = {
       ...doc.data()
   }
   },
-  getCurrentTimestamp : firebase.firestore.FieldValue.serverTimestamp
+  getCurrentTimestamp : firebase.firestore.FieldValue.serverTimestamp,
+  
 }
 export const auth = app.auth();
 export const storage  = app.storage();

@@ -100,7 +100,9 @@ export default function AddFileButton( {currentFolder} ) {
                 position : "absolute",
                 left : "-99999px"
             }
+            
         }/>
+        Click to upload a file
     </label>
     {/* portals */}
     {uploading.length > 0 && ReactDom.createPortal(

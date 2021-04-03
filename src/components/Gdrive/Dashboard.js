@@ -27,9 +27,13 @@ export default function Dashboard() {
           <AddFileButton currentFolder={folder} />
           <AddFolderButton currentFolder={folder} />
         </div>
-        {childFolders.length === 0 && childFiles.length === 0  && <Alert variant = "danger" style = {{maxWidth : "250px"}}>
+        {childFolders.length === 0 && childFiles.length === 0  && <Alert variant = "info"  
+         style = {{maxWidth : "250px"}}  >
+           
           Loading...... Please wait</Alert> } 
+         
       {childFolders.length > 0 && <hr/>}
+      
         {childFolders.length > 0 && (
          
           <div className="d-flex flex-wrap">
@@ -58,10 +62,12 @@ export default function Dashboard() {
                <File file = {childFile}/>
               </div>
             ))}
+          
           </div>
-        )}
-
+          
+        ) }
   
+      
     </Container>
     
 </>
